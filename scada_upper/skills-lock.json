@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "improve-code-quality": {
+      "source": "wondelai/skills",
+      "sourceType": "github",
+      "skillPath": "improve-code-quality/SKILL.md",
+      "computedHash": "425d7c5ed914f9402b271e7664cbbb53ca3356441ec5b84fc7c1f15eb53ed0e6"
+    }
+  }
+}

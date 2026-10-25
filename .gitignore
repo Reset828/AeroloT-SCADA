@@ -1,0 +1,72 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vs/
+.idea/
+.vscode/
+*.user
+*.suo
+*.swp
+
+# Local Qt/CMake configuration and build output
+CMakeUserPresets.json
+**/CMakeUserPresets.json
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+build/
+cmake-build-*/
+scada_upper/out/
+scada_upper/.codegraph/
+
+# Compiled binaries and libraries
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.pdb
+*.ilk
+*.exp
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Simulator logs and local runtime databases
+scada_lower/logs/*.csv
+*.log
+**/data/*.db
+**/data/*.db-shm
+**/data/*.db-wal
+
+# Flutter and Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+coverage/
+app/build/
+app/android/local.properties
+app/android/.gradle/
+app/android/app/debug/
+app/android/app/profile/
+app/android/app/release/
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Flutter/.last_build_id
+app/ios/Flutter/ephemeral/
+app/macos/Flutter/ephemeral/
+app/windows/flutter/ephemeral/
+app/linux/flutter/ephemeral/

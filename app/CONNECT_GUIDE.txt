@@ -1,0 +1,21 @@
+WebSocket连接失败可能的原因和解决方案：
+
+1. **确保SCADA服务端已启动**
+   - 先运行Qt项目，确认 "WebSocket server started on port 18080" 显示
+
+2. **确保在同一网络**
+   - 手机/模拟器用USB: 使用 `adb reverse tcp:18080 tcp:18080`
+   - 同一WiFi: 确认手机和电脑在同一WiFi
+
+3. **Android模拟器专用**
+   - 模拟器访问电脑: IP填 `10.0.2.2` (不是localhost)
+
+4. **手机USB调试**
+   ```cmd
+   adb reverse tcp:18080 tcp:18080
+   ```
+   然后手机输入: `localhost` 或 `127.0.0.1`
+
+请告诉我:
+1. 你用什么设备运行App?(手机/模拟器/Windows)
+2. 控制台显示什么错误信息?

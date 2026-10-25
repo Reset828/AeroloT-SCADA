@@ -1,0 +1,97 @@
+/* Global dark industrial theme stylesheet (Qt6) */
+
+/* General */
+QWidget {
+  font-family: Inter, Segoe UI, Microsoft YaHei, sans-serif;
+  color: #e0e0e0;
+  background: #1E1F22;
+}
+
+/* Main window surface */
+QMainWindow {
+  background: #1E1F22;
+}
+
+/* Frames and panels */
+QFrame {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+/* Labels */
+QLabel { color: #EDEFF4; }
+
+/* Buttons */
+QPushButton {
+  background: #3A3B3F;
+  color: #EDEFF4;
+  border: 1px solid #4A4A4A;
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+QPushButton:hover { background: #4A4B4F; }
+QPushButton:pressed { background: #2A2B2F; }
+
+/* ComboBox */
+QComboBox {
+  background: #2C2D30;
+  border: 1px solid #3D3E42;
+  color: #EDEFF4;
+  padding: 4px;
+}
+QLineEdit { background: #2C2D30; color: #EDEFF4; border: 1px solid #3D3E42; }
+
+/* Table views */
+QTableView {
+  background: #2C2D30;
+  gridline-color: rgba(255,255,255,0.15);
+  selection-background-color: rgba(27, 110, 214, 0.25);
+}
+QHeaderView::section {
+  background: #1B4965;
+  color: white;
+  padding: 6px;
+  border: none;
+}
+
+/* Trend chart specific (QCustomPlot is styled via code but keep general box) */
+.TrendChart { /* placeholder for potential future styling */ }
+
+/* GroupBox (监控面板) */
+QGroupBox {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid #3D3E42;
+  border-radius: 8px;
+  margin-top: 8px;
+  padding: 8px;
+  font-weight: bold;
+  color: #E1E3E6;
+}
+QGroupBox::title {
+  color: #E1E3E6;
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  padding: 0 4px;
+  left: 8px;
+}
+
+/* ComboBox in monitor panel */
+QGroupBox QComboBox {
+  background: #2C2D30;
+  color: #E1E3E6;
+  border: 1px solid #3D3E42;
+  border-radius: 4px;
+  padding: 4px 8px;
+  min-height: 24px;
+}
+QGroupBox QComboBox::drop-down {
+  border: none;
+  width: 20px;
+}
+QGroupBox QComboBox::down-arrow {
+  image: none;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #9A9C9F;
+}
